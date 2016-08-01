@@ -6,10 +6,10 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>PlanVIEW</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        PlanVIEW helps students organize their work and access infromation quickly.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
