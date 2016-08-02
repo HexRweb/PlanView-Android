@@ -7,8 +7,8 @@
         <param name="browser-package" value="Device" />
     </feature>
     <name>PlanVIEW</name>
-    <description>Hello World sample application that responds to the deviceready event.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <description>PlanVIEW helps youaccess helpful school-related infromation quickly with ease.</description>
+    <author email="" href="https://github.com/HexRweb/PlanView-Android">Swarn Singh and HexR</author>
     <content src="index.html" />
     <icon src="icon.png" />
     <access origin="*" />
