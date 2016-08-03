@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>PlanVIEW</title>
+
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<script type="text/javascript" src="js/setting.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+		<!--<plugin name="org.apache.cordova.inappbrowser" spec="0.1.0" source="pgb" />-->
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	</head>
+	<body>
+		<body class="blue-grey darken-1">
+			<header>
+				<nav class="cyan darken-4 lighten-1" role="navigation">
+					<div class="nav-wrapper container">
+						<a id="logo-container" href="#" class="brand-logo">PlanVIEW</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="#">Navbar Link</a></li>
+						</ul>
+						<!--Nav Bar with all tabs-->
+						<ul id="nav-mobile" class="side-nav blue-grey">
+							<a class="waves-effect waves-light btn z-depth-5" onclick="myFunction2()"><i class="material-icons right">dashboard</i>Home</a>
+
+							<a class="waves-effect waves-light btn z-depth-4" onclick="myFunction1()"><i class="material-icons right">settings</i>Settings</a>
+						</ul>
+						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+					</div>
+				</nav>
+			</header>
+			<main class="container section row">
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+						<!--1st Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-1-link" type="url" class="">
+								<label for="block-1-link">1st Block Website Link</label>
+							</div>
+						</div>
+						<!--2nd Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-2-link" type="url" class="">
+								<label for="block-2-link">2nd Block Website Link</label>
+							</div>
+						</div>
+						<!--3rd Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-3-link" type="url" class="">
+								<label for="block-3-link">3rd Block Website Link</label>
+							</div>
+						</div>
+						<!--4th Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-4-link" type="url" class="">
+								<label for="block-4-link">4th Block Website Link</label>
+							</div>
+						</div>
+						<!--5th Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-5-link" type="url" class="">
+								<label for="block-5-link">5th Block Website Link</label>
+							</div>
+						</div>
+						<!--6th Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-6-link" type="url" class="">
+								<label for="block-6-link">6th Block Website Link</label>
+							</div>
+						</div>
+						<!--7th Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-7-link" type="url" class="">
+								<label for="block-7-link">7th Block Website Link</label>
+							</div>
+						</div>
+						<!--8th Block Link-->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="block-8-link" type="url" class="">
+								<label for="block-8-link">8th Block Website Link</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="waves-effect waves-light btn" id="demo" type="submit">Save</button>
+			</form>
+		</main>
+		<div id="result"></div>
+
+		<!--  Scripts-->
+		<script src="js/settings.js"></script>
+		<script type="text/javascript">
+			function myFunction1() {window.open("settings.html");}
+			function myFunction2() {window.open("index.html");}
+		</script>
+	</body>
+</html>
