@@ -4,9 +4,18 @@
 
 		<title>PlanVIEW</title>
 		<!--<script src="jquery-1.12.4.min.js"></script>-->
+		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+
+		<script type="text/javascript">
+			function myFunction1() {window.open("settings.html");}
+			function myFunction2() {window.open("index.html");}
+		</script>
+
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 		<!--<plugin name="org.apache.cordova.inappbrowser" spec="0.1.0" source="pgb" />-->
@@ -27,7 +36,7 @@
 						<!--Nav Bar with all tabs-->
 						<ul id="nav-mobile" class="side-nav blue-grey">
 							<a class="waves-effect waves-light btn z-depth-5" onclick="myFunction2()"><i class="material-icons right">dashboard</i>Home</a>
-							
+
 							<a class="waves-effect waves-light btn z-depth-4" onclick="myFunction1()"><i class="material-icons right">settings</i>Settings</a>
 						</ul>
 						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -102,13 +111,6 @@
 		<div id="result"></div>
 
 		<!--  Scripts-->
-		<script src="js/init.js"></script>
-		<script src="js/settings.js"></script>
-		<script type="text/javascript" src="cordosva.js"></script>
-		<script type="text/javascript">
-			function myFunction1() {window.open("settings.html");}
-			function myFunction2() {window.open("index.html");}
-			app.initialize();
-		</script>
+
 	</body>
 </html>
