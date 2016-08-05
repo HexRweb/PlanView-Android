@@ -7,6 +7,6 @@ $(document).ready(function()
 		pv.saveNote(block,$("#block-"+block+"-notes").val());
 		Materialize.toast("Saved",5000);
 	});
-	if(localStorage.getItem("notes") == null) resetNotes(); //Ensures that the notes start out ready.
+	if(localStorage.getItem("notes") == null) pv.resetNotes(); //Ensures that the notes start out ready.
 	pv.updateNotes();
 })
