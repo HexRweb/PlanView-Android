@@ -5,6 +5,7 @@ $(document).ready(function(){
 	pv.updateOption = pv.updateOption || function(option,value,callback){localStorage.setItem(option,value); console.log("Dun diz",localStorage.getItem(option));/* Code to update global preferences*/ callback();};
 	pv.getOption = pv.getOption || function(option){return localStorage.getItem(option);};
 	pv.updateLinks = pv.updateLinks || function(){let prefix="#block-";for(let i=1; i<=8;i++){$(prefix+i).attr("data-location",pv.getOption((prefix+i).replace(/#/g,"")));}};
+	pv.updateNotes = pv.updateNotes || function(){let name="block-{{ID}}-notes"};
 	$(".class").click(pv.classClick);
 	$('.button-collapse').sideNav();
 	pv.updateLinks();
