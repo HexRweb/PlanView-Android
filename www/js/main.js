@@ -1,3 +1,6 @@
+function onLoad() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+}
 $(document).ready(function(){
 	window.pv = window.pv || {};
 	pv.openClass = pv.openClass || function(link){window.open(link, '_system', 'location=yes')};

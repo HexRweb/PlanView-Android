@@ -1,3 +1,7 @@
+function onLoad() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+}
+
 $("#demo").click(function(e){
 	e.preventDefault();
 	let prefix="#block-",el=prefix + "{{ID}}-link", newLinks = [];
@@ -18,7 +22,7 @@ $("#demo").click(function(e){
 	{
 		let j=i+1
 		pv.updateOption((prefix+j).replace(/#/g,""),newLinks[i],function(){$(prefix+j).attr("data-location",newLinks[i])});
-	}
+
 	pv.updateOption("autosave",$("#autosave").is(":checked"),function(){});
 	Materialize.toast("Settings saved!",5000);
 });
