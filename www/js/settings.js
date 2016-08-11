@@ -1,6 +1,4 @@
-function onLoad() {
-		document.addEventListener("deviceready", onDeviceReady, false);
-}
+
 
 $("#demo").click(function(e){
 	e.preventDefault();

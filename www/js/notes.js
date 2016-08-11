@@ -1,6 +1,4 @@
-function onLoad() {
-		document.addEventListener("deviceready", onDeviceReady, false);
-}
+
 $(document).ready(function()
 {
 	$(".btn-save").click(function()
