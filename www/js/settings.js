@@ -1,5 +1,4 @@
 
-
 $("#demo").click(function(e){
 	e.preventDefault();
 	let prefix="#block-",el=prefix + "{{ID}}-link", newLinks = [];
