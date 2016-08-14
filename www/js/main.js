@@ -1,5 +1,8 @@
 
 $(document).ready(function(){
+	$('.modal-trigger').leanModal();
+
+
 	window.pv = window.pv || {};
 	pv.openClass = pv.openClass || function(link){window.open(link, '_system', 'location=yes')};
 	pv.classClick = pv.classClick || function(e){return pv.openClass($(this).attr("data-location"));};

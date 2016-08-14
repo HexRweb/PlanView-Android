@@ -4857,6 +4857,19 @@ small {
   -webkit-tap-highlight-color: transparent;
 }
 
+.btn2{
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 360px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .btn.disabled, .disabled.btn-large,
 .btn-floating.disabled,
 .btn-large.disabled,
@@ -5292,7 +5305,7 @@ a.waves-effect .waves-ripple {
   bottom: -100%;
   margin: 0;
   width: 100%;
-  max-height: 45%;
+  max-height: 70%;
   border-radius: 0;
   will-change: bottom, opacity;
 }
