@@ -8,5 +8,3 @@ pv.resetNotes = pv.resetNotes || function(){pv.updateOption("notes",JSON.stringi
 pv.updateNotes = pv.updateNotes || function(){let name="block-{{ID}}-notes";for(let i=1; i<=8;i++){($("#"+name.replace(/{{ID}}/g,i)).val(pv.getNote(i)))}};
 pv.getNote = pv.getNote || function(note){let json = JSON.parse(pv.getOption("notes")); return (json[note]) ? json[note] : ""};
 pv.saveNote = pv.saveNote || function(which,what){let json = JSON.parse(pv.getOption("notes")); json[which] = what; pv.updateOption("notes",JSON.stringify(json),function(){})};
-$(".class").click(pv.classClick);
-pv.updateLinks();
