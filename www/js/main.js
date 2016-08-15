@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+	window.alert("Doc ready called");
 	$('.modal-trigger').leanModal();
 
 

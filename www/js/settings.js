@@ -9,7 +9,7 @@ $("#demo").click(function(e){
 		else
 		{
 			$(el.replace(/{{ID}}/g,i)).addClass("invalid");
-			Materialize.toast("There was an error",5000);
+			Materialize.toast("Please fill all the boxes",5000);
 			return false;
 		}
 
