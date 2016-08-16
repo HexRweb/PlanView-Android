@@ -3,6 +3,8 @@
   <description>PlanVIEW helps students access school related infromation </description>
   <author href="https://hexr.org/" email="swarnwhs@gmail.com">HexR Team</author>
   <content src="index.html"/>
+  <preference name="phonegap-version" value="cli-6.0.0" />
+  <preference name="target-device" value="handset" />
 
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
