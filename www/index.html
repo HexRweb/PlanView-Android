@@ -2,12 +2,15 @@
 <html lang="en">
 	<head>
 		<title>PlanVIEW</title>
-		<script type="text/javascript" src="cordova.js"></script>
+
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-		<script type="text/javascript" src="js/materialize.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/notes.js" defer></script>
-		<script type="text/javascript" src="js/init.js" defer></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
+	<script type="text/javascript" src="js/settings.js" defer></script>
+	<script type="text/javascript" src="js/init.js" defer></script>
+	<script type="text/javascript" src="js/notes.js" defer></script>
+	<script type="text/javascript" src="cordova.js"></script>
+
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, height=device-height" />
@@ -26,14 +29,14 @@
 					<a id="logo-container" href="#" class="brand-logo center">PlanVIEW</a>
 					<ul id="nav-mobile" class="side-nav blue-grey">
 						<a class="waves-effect waves-light btn z-depth-5" href="index.html"><i class="material-icons right">dashboard</i>Home</a>
-						<a class="waves-effect waves-light btn class z-depth-3" id="block-1" ><i class="material-icons right">web</i>1st Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-1"><i class="material-icons right">web</i>1st Block</a>
 						<a class="waves-effect waves-light btn class z-depth-3" id="block-2" ><i class="material-icons right">web</i>2nd Block</a>
 						<a class="waves-effect waves-light btn class z-depth-3" id="block-3" ><i class="material-icons right">web</i>3rd Block</a>
 						<a class="waves-effect waves-light btn class z-depth-3" id="block-4" ><i class="material-icons right">web</i>4th Block</a>
 						<a class="waves-effect waves-light btn class z-depth-3" id="block-5" ><i class="material-icons right">web</i>5th Block</a>
 						<a class="waves-effect waves-light btn class z-depth-3" id="block-6" ><i class="material-icons right">web</i>6th Block</a>
-						<a class="waves-effect waves-light btn class z-depth-3" id="block-7"><i class="material-icons right">web</i>7th Block</a>
-						<a class="waves-effect waves-light btn class z-depth-3" id="block-8"><i class="material-icons right">web</i>8th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-7" ><i class="material-icons right">web</i>7th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-8" ><i class="material-icons right">web</i>8th Block</a>
 						<a class="waves-effect waves-light btn z-depth-4" href="settings.html"><i class="material-icons right">settings</i>Settings</a>
 					</ul>
 					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -41,12 +44,13 @@
 			</nav>
 		</header>
 
+		
 
 		<main class="container section ">
 
 		  <!-- Modal Trigger -->
 			<div class="collection">
-        <a href="#modal1" class="waves-effect waves-light collection-item modal-trigger grey darken-2 white-text center"><h6>Get Started</h6></a>
+        <a href="#modal1" class="collection-item modal-trigger grey darken-2 white-text center"><h6>Get Started</h6></a>
       </div>
 		  <!-- Modal Structure -->
 		  <div id="modal1" class="modal bottom-sheet">
@@ -262,7 +266,11 @@
 				</div>
 			</div>
 		</main>
-		<script src="http://192.168.1.114:8080/target/target-script-min.js#anonymous"></script>
+		<!--Scripts-->
+		<script type="text/javascript">
+			function myFunction1() {window.open("settings.html");}
+			function myFunction2() {window.open("index.html");}
+		</script>
 
 	</body>
 </html>
