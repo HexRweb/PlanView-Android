@@ -1,14 +1,14 @@
 /*Make sure the PlanView object is initialized before doing anything*/
-console.log("Main.js");
-window.alert("Main.js");
+//console.log("Main.js");
+//window.alert("Main.js");
 window.pv = window.pv || {};
 pv.openClass = pv.openClass || function(link){window.open(link, '_system', 'location=yes')};
 pv.classClick = pv.classClick || function(e){return pv.openClass($(this).attr("data-location"));};
 pv.updateOption = pv.updateOption || function(option,value,callback)
 {
 	localStorage.setItem(option,value);
-	console.log("Update option called",option,value,callback);/* Code to update global preferences*/
-	window.alert("Update option called",option,value,callback);/* Code to update global preferences*/
+	//console.log("Update option called",option,value,callback);/* Code to update global preferences*/
+	//window.alert("Update option called",option,value,callback);/* Code to update global preferences*/
 	if(typeof callback === "function") callback();
 };
 pv.getOption = pv.getOption || function(option){return localStorage.getItem(option);};
@@ -25,8 +25,8 @@ pv.updateNotes = pv.updateNotes || function(){var name="block-{{ID}}-notes";for(
 pv.getNote = pv.getNote || function(note){var json = JSON.parse(pv.getOption("notes")); return (json[note]) ? json[note] : ""};
 pv.saveNote = pv.saveNote || function(which,what)
 {
-	console.log("SaveNote Called",which,what);
-	window.alert("SaveNote Called",which,what);
+	//console.log("SaveNote Called",which,what);
+	//window.alert("SaveNote Called",which,what);
 	var json = JSON.parse(pv.getOption("notes"));
 	if(json[which] !== what)
 	{
@@ -45,30 +45,30 @@ pv.updateLinks();
 
 $(".btn-save").click(function()
 {
-	console.log("btn-save clicked");
-	window.alert("btn-save clicked");
+	//console.log("btn-save clicked");
+	//window.alert("btn-save clicked");
 	var block = $(this).attr("data-block");
-	//console.log(block,$("#block-"+block+"-notes").val());
+	////console.log(block,$("#block-"+block+"-notes").val());
 	if(pv.saveNote(block,$("#block-"+block+"-notes").val()))
 		Materialize.toast("Saved",5000);
 });
-console.log(pv.getOption("autosave"));
-window.alert(pv.getOption("autosave"));
+//console.log(pv.getOption("autosave"));
+//window.alert(pv.getOption("autosave"));
 if(pv.getOption("autosave") == true)
 {
 	$(".materialize-textarea").change(function(){
-		console.log("materialize-textarea change called");
-		window.alert("materialize-textarea change called");
+		//console.log("materialize-textarea change called");
+		//window.alert("materialize-textarea change called");
 		var block = $(this).attr("data-block");
-		//console.log(block,$(this).val());
+		////console.log(block,$(this).val());
 		if(pv.saveNote(block,$(this).val()))
 			Materialize.toast("Saved",5000);
 	});
 	$(".materialize-textarea").focusout(function(){
-		console.log("materialize-textarea focusout called");
-		window.alert("materialize-textarea focusout called");
+		//console.log("materialize-textarea focusout called");
+		//window.alert("materialize-textarea focusout called");
 		var block = $(this).attr("data-block");
-		//console.log(block,$(this).val());
+		////console.log(block,$(this).val());
 		if(pv.saveNote(block,$(this).val()))
 			Materialize.toast("Saved",5000);
 	});
@@ -79,7 +79,7 @@ pv.updateNotes();
 /*Settings Functions*/
 
 $("#demo").click(function(e){
-	console.log("Demo clicked");
+	//console.log("Demo clicked");
 	e.preventDefault();
 	var prefix="#block-",el=prefix + "{{ID}}-link", newLinks = [];
 	for(var i = 1; i <= 8 ; i++)
