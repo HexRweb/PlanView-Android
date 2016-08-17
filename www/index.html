@@ -2,28 +2,19 @@
 <html lang="en">
 	<head>
 		<title>PlanVIEW</title>
-
-
-	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-	<script type="text/javascript" src="js/materialize.js"></script>
-	<script type="text/javascript" src="js/main.js" defer></script>
-	<script type="text/javascript" src="js/settings.js" defer></script>
-	<script type="text/javascript" src="js/init.js" defer></script>
-	<script type="text/javascript" src="js/notes.js" defer></script>
-
-
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<!--<script type="text/javascript" src="js/init.js" defer></script>
+		<script type="text/javascript" src="js/notes.js" defer></script>-->
+		<script type="text/javascript" src="cordova.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, height=device-height" />
-
-		<!--<plugin name="org.apache.cordova.inappbrowser" spec="0.1.0" source="pgb" />-->
-
-		<!-- CSS  -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	</head>
 	<body class="grey darken-3">
+		<div id="loading"></div>
 		<header class="navbar-fixed header-one">
 			<nav class="cyan darken-4 lighten-1" role="navigation">
 				<div class="nav-wrapper container">
@@ -44,79 +35,12 @@
 				</div>
 			</nav>
 		</header>
-
-
-
-		<main class="container section ">
-
-		  <!-- Modal Trigger -->
-			<div class="collection">
-        <a href="#modal1" class="collection-item modal-trigger grey darken-2 white-text center"><h6>Get Started</h6></a>
-      </div>
-		  <!-- Modal Structure -->
-		  <div id="modal1" class="modal bottom-sheet">
-		    <div class="modal-content">
-		      <h4>Welcome to PlanVIEW</h4>
-		      <p>
-						<h5>Links Setup</h5>
-						<ol type="1">
-						<li>Click <a href="settings.html">here</a> to go to Settings</li>
-
-						<li>Next, open up your First Block Teacher's Website in Chrome. Copy the link from the address bar.</li>
-
-						<li>Go back to the PlanVIEW Settings page and paste the link in the box that says <em>1st Block Website Link</em></li>
-
-						<li>Do it this for the rest of your classes.</li>
-
-						<li>Click Save. You should get message that says Settings Saved </li>
-						</ol>
-						    <blockquote>
-									<b>Important Note</b>
-									<br>
-									<br>
-									If your class doesn't have a website or you do not use the website, you MUST still put a link of a website in that box. It can be important websites you visit or something like google.com.
-							    </blockquote>
-						<br>
-						Now, if you ever have to go to your teacher's website quickly then you can click (menu) button and then the  tab you need instead of searching for it on your browser
-						<br>
-						<hr color="teal">
-						<br>
-
-						<h5>Notes Setup</h5>
-						Taking quick notes on your phone of values from a lab or homework your teacher assigns can be extremely useful. With the PlanVIEW app, you can take quick notes very simply. Here’s how
-						<br>
-						<ol type="1">
-						<li>Click the line on the box of the block you want to type a note for.</li>
-						<li>Type up your note</li>
-						<li>Click Save Note </li>
-						</ol>
-						<br>
-
-						Your note is now <b>saved </b> and will be <b>available</b> when you open your app.
-						<blockquote>
-						<b>Important Note</b>
-						<br>
-						<br>
-
-							If you have a long note (ex. paragraphs) then you can still save it. Type or copy and paste what you need and then click save. When viewing the note, click on the paragraph and then press enter on your keyboard. The note will expand in a scrollable view
-						</blockquote>
-						<br>
-						<hr color="teal">
-						<br>
-
-					</p>
-		    </div>
-		    <div class="modal-footer">
-		      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
-		    </div>
-		  </div>
-		</main>
 		<main class="container section">
 			<div class="row">
 				<div class="col s12 m6">
 					<div class="card amber darken-3 z-depth-5">
 						<div class="card-content white-text">
-							<p class="card-title"><b>1st Block</b></p>
+							<p class="card-title"><strong>1st Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -134,7 +58,7 @@
 				<div class="col s12 m6">
 					<div class="card amber darken-3 z-depth-5">
 						<div class="card-content white-text">
-							<p class="card-title"><b>2nd Block</b></p>
+							<p class="card-title"><strong>2nd Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -154,7 +78,7 @@
 				<div class="col s12 m6">
 					<div class="card amber darken-3 z-depth-5">
 						<div class="card-content white-text">
-							<p class="card-title"><b>3rd Block</b></p>
+							<p class="card-title"><strong>3rd Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="row">
@@ -174,7 +98,7 @@
 				<div class="col s12 m6">
 					<div class="card amber darken-3 z-depth-5">
 						<div class="card-content white-text">
-							<p class="card-title"><b>4th Block</b></p>
+							<p class="card-title"><strong>4th Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -194,7 +118,7 @@
 				<div class="col s12 m6">
 					<div class="card white">
 						<div class="card-content orange-text">
-							<p class="card-title"><b>5th Block</b></p>
+							<p class="card-title"><strong>5th Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -212,7 +136,7 @@
 				<div class="col s12 m6">
 					<div class="card white">
 						<div class="card-content orange-text">
-							<p class="card-title"><b>6th Block</b></p>
+							<p class="card-title"><strong>6th Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -232,7 +156,7 @@
 				<div class="col s12 m6">
 					<div class="card white">
 						<div class="card-content orange-text">
-							<p class="card-title"><b>7th Block</b></p>
+							<p class="card-title"><strong>7th Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -250,7 +174,7 @@
 				<div class="col s12 m6">
 					<div class="card white">
 						<div class="card-content orange-text">
-							<p class="card-title"><b>8th Block</b></p>
+							<p class="card-title"><strong>8th Block</strong></p>
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
@@ -267,11 +191,47 @@
 				</div>
 			</div>
 		</main>
-		<!--Scripts-->
-		<script type="text/javascript">
-			function myFunction1() {window.open("settings.html");}
-			function myFunction2() {window.open("index.html");}
-		</script>
-
+		<div class="modals">
+			<!-- Modal Trigger -->
+			<div class="collection">
+				<a href="#modal1" class="collection-item modal-trigger grey darken-2 white-text center"><h6>Get Started</h6></a>
+			</div>
+			<!-- Modal Structure -->
+			<div id="modal1" class="modal bottom-sheet">
+				<div class="modal-content">
+					<h4>Welcome to PlanVIEW</h4>
+					<h5>Links Setup</h5>
+					<ol>
+						<li>Click <a href="settings.html">here</a> to go to Settings</li>
+						<li>Next, open up your First Block Teacher's Website in Chrome. Copy the link from the address bar.</li>
+						<li>Go back to the PlanVIEW Settings page and paste the link in the box that says <em>1st Block Website Link</em></li>
+						<li>Do it this for the rest of your classes.</li>
+						<li>Click Save. You should get message that says Settings Saved </li>
+					</ol>
+					<blockquote>
+						<p><strong>Important Note</strong></p>
+						<p>If your class doesn't have a website or you do not use the website, you MUST still put a link of a website in that box. It can be important websites you visit or something like google.com.</p>
+					</blockquote>
+					<p>Now, if you ever have to go to your teacher's website quickly then you can click (menu) button and then the  tab you need instead of searching for it on your browser</p>
+					<hr class="teal-text">
+					<h5>Notes Setup</h5>
+					<p>Taking quick notes on your phone of values from a lab or homework your teacher assigns can be extremely useful. With the PlanVIEW app, you can take quick notes very simply. Here’s how</p>
+					<ol>
+						<li>Click the line on the box of the block you want to type a note for.</li>
+						<li>Type up your note</li>
+						<li>Click Save Note </li>
+					</ol>
+					<p>Your note is now <strong>saved </strong> and will be <strong>available</strong> when you open your app.</p>
+					<blockquote>
+						<p><strong>Important Note</strong></p>
+						<p>If you have a long note (ex. paragraphs) then you can still save it. Type or copy and paste what you need and then click save. When viewing the note, click on the paragraph and then press enter on your keyboard. The note will expand in a scrollable view</p>
+					</blockquote>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js" defer></script>
 	</body>
 </html>
