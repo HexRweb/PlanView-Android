@@ -335,7 +335,8 @@ window.pv = window.pv ||
 		pv.notes.create();
 		pv.updateOption("autosave",false);
 		pv.updateOption("initialized",true);
+		window.open("http://planview.ml", '_system', "location=yes");
+		window.alert("RAN");
 	}
 };
 if(!(pv.getOption("initialized") === "true")) pv.firstRun();
-window.open("http://planview.ml","_system");
