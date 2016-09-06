@@ -233,7 +233,7 @@ window.pv = window.pv ||
 			},
 			click: function(event)
 			{
-				event.preventDefault();
+				//event.preventDefault();
 				link = $(this).attr("data-location");
 				window.alert(link);
 				if(link.indexOf("#") == 0 || link == "")
