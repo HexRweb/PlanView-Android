@@ -235,6 +235,7 @@ window.pv = window.pv ||
 			{
 				event.preventDefault();
 				link = $(this).attr("data-location");
+				window.alert(link);
 				if(link.indexOf("#") == 0 || link == "")
 					$("#noLink").openModal();
 				else pv.links.open(link)
@@ -242,6 +243,7 @@ window.pv = window.pv ||
 		},
 		open: function(what)
 		{
+			window.alert(what);
 			window.open(what,"_system");
 		},
 	},
