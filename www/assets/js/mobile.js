@@ -244,7 +244,7 @@ window.pv = window.pv ||
 		open: function(what)
 		{
 			window.alert("attempting to open " + what)
-			window.open(encodeURI(what), '_system', 'location=yes');
+			window.open(encodeURI(what), '_blank', 'location=yes');
 		},
 	},
 	notes:
