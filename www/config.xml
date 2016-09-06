@@ -1,10 +1,10 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.hexr.planview" version="1.1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.HexR.PlanVIEW" versionCode="110" version="1.1.0">
   <name>PlanVIEW</name>
   <description>PlanVIEW helps students access school related infromation </description>
   <author href="https://hexr.org/" email="hexrdesign@gmail.com">HexR Design</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="android-minSdkVersion" value="15"/>
 
   <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>
   <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2"/>
