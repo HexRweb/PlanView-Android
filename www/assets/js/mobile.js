@@ -243,8 +243,8 @@ window.pv = window.pv ||
 		},
 		open: function(what)
 		{
-			window.alert("attempting to open " + what)
-			window.open(encodeURI(what), '_blank', 'location=yes');
+			window.alert("attempting to open" + what);
+			window.alert(cordova.InAppBrowser.open(encodeURI(what), '_system', 'location=yes'));
 		},
 	},
 	notes:
