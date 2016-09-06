@@ -235,7 +235,7 @@ window.pv = window.pv ||
 			{
 				event.preventDefault();
 				link = $(this).attr("data-location");
-				window.alert("link");
+				window.alert(link);
 				if(link.indexOf("#") == 0 || link == "")
 					$("#noLink").openModal();
 				else pv.links.open(link)
