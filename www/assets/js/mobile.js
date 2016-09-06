@@ -121,7 +121,7 @@ window.pv = window.pv ||
 		},
 		openEmail:function(email)
 		{
-			window.open("mailto:"+email,"_system");
+			window.open("mailto:"+email, '_system', 'location=yes');
 		},
 		updateEmails: function(prefix,suffix)
 		{
@@ -244,7 +244,7 @@ window.pv = window.pv ||
 		open: function(what)
 		{
 			window.alert(what);
-			window.open(what,"_system");
+			window.open(what, '_system', 'location=yes');
 		},
 	},
 	notes:
